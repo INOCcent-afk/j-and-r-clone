@@ -10,9 +10,6 @@ const Home: NextPage = () => {
         <meta name="description" content="Jess & Russ" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-
-
     </div>
   )
 }
