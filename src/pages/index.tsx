@@ -4,13 +4,13 @@ import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
-    <main className="relative">
+    <div>
       <Head>
         <title>Jess & Russ</title>
         <meta name="description" content="Jess & Russ" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="absolute top-0 left-0 z-10 w-[110px] h-[100px] xs:w-[230px] xs:h-[200px] md:w-[330px] md:h-[300px] xl:w-[450px] xl:h-[397px]">
+      <div className="absolute top-0 left-0 z-10 w-[110px] h-[100px] xs:w-[170px] xs:h-[150px] md:w-[280px] md:h-[250px] xl:w-[450px] xl:h-[397px]">
         <Image
           src="/topswirl-left.png"
           alt="swirl"
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           objectFit="contain"
         />
       </div>
-      <div className="absolute top-0 right-0 z-10  w-[110px] h-[100px] xs:w-[230px] xs:h-[200px] md:w-[330px] md:h-[300px] xl:w-[450px] xl:h-[397px]">
+      <div className="absolute top-0 right-0 z-10 w-[110px] h-[100px] xs:w-[170px] xs:h-[150px] md:w-[280px] md:h-[250px] xl:w-[450px] xl:h-[397px]">
         <Image
           src="/topswirl-right.png"
           alt="swirl"
@@ -26,7 +26,18 @@ const Home: NextPage = () => {
           objectFit="contain"
         />
       </div>
-    </main>
+
+      <main className="flex items-center justify-center flex-col mt-[20px]">
+        <section className="relative  w-[300px] h-[400px] xs:w-[450px] xs:h-[600px] md:w-[600px] md:h-[732px] xl:w-[1000px] xl:h-[832px]">
+          <Image
+            src="/1b.png"
+            alt="jess and russ"
+            layout="fill"
+            objectFit="contain"
+          />
+        </section>
+      </main>
+    </div>
   );
 };
 
