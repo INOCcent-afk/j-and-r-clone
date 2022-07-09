@@ -20,22 +20,46 @@ export const XOScene: FC<Props> = ({ containerRef }) => {
   return (
     <>
       <div className="w-[340px] relative h-[300px]  mx-auto">
-        <Image src="/9a.jpeg" alt="girl" layout="fill" objectFit="fill" />
+        <Image
+          src="/9a.jpeg"
+          alt="girl"
+          layout="fill"
+          objectFit="fill"
+          priority
+        />
       </div>
       <div className="absolute top-[0px] left-[1.9px]" ref={xo1Ref}>
         <div className="w-[340px] relative h-[300px] mx-auto">
-          <Image src="/9b.png" alt="sing" layout="fill" objectFit="fill" />
+          <Image
+            src="/9b.png"
+            alt="sing"
+            layout="fill"
+            objectFit="fill"
+            priority
+          />
         </div>
       </div>
       <div className="absolute top-[-300px] left-[1.9px]" ref={xo2Ref}>
         <div className="w-[340px] relative h-[300px] mx-auto">
-          <Image src="/9b.png" alt="sing" layout="fill" objectFit="fill" />
+          <Image
+            src="/9b.png"
+            alt="sing"
+            layout="fill"
+            objectFit="fill"
+            priority
+          />
         </div>
       </div>
 
       <div className="absolute top-[-700px] left-[1.9px]" ref={xo3Ref}>
         <div className="w-[340px] relative h-[300px] mx-auto">
-          <Image src="/9b.png" alt="sing" layout="fill" objectFit="fill" />
+          <Image
+            src="/9b.png"
+            alt="sing"
+            layout="fill"
+            objectFit="fill"
+            priority
+          />
         </div>
       </div>
     </>

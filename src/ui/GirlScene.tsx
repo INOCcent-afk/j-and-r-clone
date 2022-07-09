@@ -20,14 +20,26 @@ export const GirlScene: FC<Props> = ({ containerRef }) => {
   return (
     <>
       <div className="w-[340px] relative h-[300px] mt-[-5px] mx-auto">
-        <Image src="/3a.jpeg" alt="city" layout="fill" objectFit="fill" />
+        <Image
+          src="/3a.jpeg"
+          alt="city"
+          layout="fill"
+          objectFit="fill"
+          priority
+        />
       </div>
       <div className="absolute top-0">
         <div
           className="w-[320px] h-[300px] relative  mt-[-30px] mx-auto"
           ref={starsRef}
         >
-          <Image src="/3b.png" alt="stars" layout="fill" objectFit="fill" />
+          <Image
+            src="/3b.png"
+            alt="stars"
+            layout="fill"
+            objectFit="fill"
+            priority
+          />
         </div>
       </div>
       <div className="absolute top-0">
@@ -35,7 +47,13 @@ export const GirlScene: FC<Props> = ({ containerRef }) => {
           className="w-[320px] h-[300px] relative mt-[100px] mx-auto "
           ref={moonRef}
         >
-          <Image src="/3c.png" alt="moon" layout="fill" objectFit="fill" />
+          <Image
+            src="/3c.png"
+            alt="moon"
+            layout="fill"
+            objectFit="fill"
+            priority
+          />
         </div>
       </div>
       <div className="absolute top-0">
@@ -43,7 +61,13 @@ export const GirlScene: FC<Props> = ({ containerRef }) => {
           className="w-[320px] h-[300px] relative mt-[-100px] mx-auto "
           ref={angelRef}
         >
-          <Image src="/3d.png" alt="girl" layout="fill" objectFit="fill" />
+          <Image
+            src="/3d.png"
+            alt="girl"
+            layout="fill"
+            objectFit="fill"
+            priority
+          />
         </div>
       </div>
     </>

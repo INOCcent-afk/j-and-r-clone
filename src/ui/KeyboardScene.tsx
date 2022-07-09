@@ -16,11 +16,23 @@ export const KeyboardScene: FC<Props> = ({ containerRef }) => {
   return (
     <>
       <div className="w-[340px] relative h-[300px]  mx-auto">
-        <Image src="/7a.png" alt="sing" layout="fill" objectFit="fill" />
+        <Image
+          src="/7a.png"
+          alt="sing"
+          layout="fill"
+          objectFit="fill"
+          priority
+        />
       </div>
       <div className="absolute top-[-80px] left-[1.9px]" ref={keyboardRef}>
         <div className="w-[340px] relative h-[300px] mx-auto">
-          <Image src="/7b.png" alt="sing" layout="fill" objectFit="fill" />
+          <Image
+            src="/7b.png"
+            alt="sing"
+            layout="fill"
+            objectFit="fill"
+            priority
+          />
         </div>
       </div>
     </>

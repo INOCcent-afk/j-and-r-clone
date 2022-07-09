@@ -21,19 +21,37 @@ export const SingScene: FC<Props> = ({ containerRef }) => {
     <>
       <div className="absolute top-0" ref={backgroundRef}>
         <div className="w-[340px] relative h-[300px] mt-[-25px] mx-auto">
-          <Image src="/5a.jpeg" alt="sing" layout="fill" objectFit="fill" />
+          <Image
+            src="/5a.jpeg"
+            alt="sing"
+            layout="fill"
+            objectFit="fill"
+            priority
+          />
         </div>
       </div>
       <div className="absolute top-0" ref={micRef}>
         <div className="w-[340px] relative h-[300px] mt-[35px] mx-auto">
-          <Image src="/5c.png" alt="sing" layout="fill" objectFit="fill" />
+          <Image
+            src="/5c.png"
+            alt="sing"
+            layout="fill"
+            objectFit="fill"
+            priority
+          />
         </div>
       </div>
       <div
         className="w-[340px] relative h-[300px] mt-[30px] mx-auto"
         ref={manRef}
       >
-        <Image src="/5b.png" alt="sing" layout="fill" objectFit="fill" />
+        <Image
+          src="/5b.png"
+          alt="sing"
+          layout="fill"
+          objectFit="fill"
+          priority
+        />
       </div>
     </>
   );

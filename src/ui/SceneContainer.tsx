@@ -16,6 +16,7 @@ export const SceneContainer = forwardRef<HTMLDivElement, Props>(
             alt="frame-top"
             objectFit="fill"
             layout="fill"
+            priority
           />
         </div>
         <div className="relative w-[346px] mx-auto overflow-hidden border-x-[0.1px] border-x-yellow">
@@ -27,6 +28,7 @@ export const SceneContainer = forwardRef<HTMLDivElement, Props>(
             alt="frame-bottom"
             objectFit="fill"
             layout="fill"
+            priority
           />
         </div>
       </section>

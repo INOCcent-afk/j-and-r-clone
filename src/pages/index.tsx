@@ -33,6 +33,7 @@ const Home: NextPage = () => {
           alt="swirl"
           layout="fill"
           objectFit="contain"
+          priority
         />
       </div>
       <div className="absolute top-0 right-0 z-10 w-[110px] h-[100px] xs:w-[170px] xs:h-[150px] md:w-[280px] md:h-[250px] xl:w-[450px] xl:h-[397px]">
@@ -41,6 +42,7 @@ const Home: NextPage = () => {
           alt="swirl"
           layout="fill"
           objectFit="contain"
+          priority
         />
       </div>
 
@@ -51,6 +53,7 @@ const Home: NextPage = () => {
             alt="jess and russ"
             layout="fill"
             objectFit="contain"
+            priority
           />
         </section>
 
