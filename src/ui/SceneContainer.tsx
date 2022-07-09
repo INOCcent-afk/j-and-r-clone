@@ -3,12 +3,13 @@ import React, { forwardRef, ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
+  additionalClassnames?: string;
 }
 
 export const SceneContainer = forwardRef<HTMLDivElement, Props>(
-  ({ children }, ref) => {
+  ({ children, additionalClassnames }, ref) => {
     return (
-      <section className="relative mt-24" ref={ref}>
+      <section className={`relative mt-24 ${additionalClassnames}`} ref={ref}>
         <div className="relative w-[350px] h-[5px] mb-[0px] mt-[-10px]">
           <Image
             src="/frame-top.png"

@@ -3,11 +3,12 @@ import React, { FC } from "react";
 
 interface Props {
   desc: string;
+  additionalClassnames?: string;
 }
 
-const Banner: FC<Props> = ({ desc }) => {
+const Banner: FC<Props> = ({ desc, additionalClassnames }) => {
   return (
-    <section className="max-w-[150px]">
+    <section className={`max-w-[150px] ${additionalClassnames}`}>
       <div className="relative w-[150px] h-[50px] ">
         <Image
           src="/story-top.png"

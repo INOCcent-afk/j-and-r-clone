@@ -8,11 +8,15 @@ import { Timeline } from "../ui/Timeline";
 import Banner from "../ui/Banner";
 import { SceneContainer } from "../ui/SceneContainer";
 import { GirlScene } from "../ui/GirlScene";
+import { SingScene } from "../ui/SingScene";
+import { KeyboardScene } from "../ui/KeyboardScene";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Home: NextPage = () => {
-  const containerRef = useRef(null);
+  const girlContainerRef = useRef(null);
+  const singContainerRef = useRef(null);
+  const keyboardContainerRef = useRef(null);
 
   return (
     <div>
@@ -95,8 +99,8 @@ const Home: NextPage = () => {
           reverse
         />
 
-        <SceneContainer ref={containerRef}>
-          <GirlScene containerRef={containerRef} />
+        <SceneContainer ref={girlContainerRef}>
+          <GirlScene containerRef={girlContainerRef} />
         </SceneContainer>
 
         <Timeline
@@ -123,8 +127,8 @@ const Home: NextPage = () => {
         <Banner desc="he worked for Louise Fili from 9-6 and spent 7-2am at her studio in Greenpoint. It was an intense but rewarding work schedule. She was beginning to make a name for herself." />
 
         <Timeline
-          addinationalClassname="mt-[105px]"
-          timelineHeight="h-[250px]"
+          addinationalClassname="mt-[100px]"
+          timelineHeight="h-[230px]"
           timelineMT="mt-[-110px]"
           titleOne="January 2008"
           ulCn="mt-[0px]"
@@ -143,6 +147,87 @@ const Home: NextPage = () => {
               <span className="text-yellow">their van wasn't so lucky.</span>
             </p>
           }
+        />
+
+        <SceneContainer additionalClassnames="mt-[50px]" ref={singContainerRef}>
+          <SingScene containerRef={singContainerRef} />
+        </SceneContainer>
+
+        <Timeline
+          addinationalClassname="mt-[110px]"
+          timelineHeight="h-[250px]"
+          timelineMT="mt-[-110px]"
+          titleOne="May 2008"
+          ulCn="mt-[0px]"
+          descOne={
+            <p className="text-gray text-[11px]">
+              Due to her work schedule, a long distance relationship blossomed
+              and fizzled. She was back to square one.
+            </p>
+          }
+          titleTwo="May 2008"
+          descTwo={
+            <p className="text-gray text-[11px]">
+              After a tumultuous relationship came to a close, he decided to
+              take a break from dating, and took up bread baking.
+            </p>
+          }
+          reverse
+        />
+
+        <Banner
+          additionalClassnames="mt-[8px]"
+          desc="They barely had time to eat (let alone date) with their crazy schedules. They both wanted to meet someone special, but couldn’t figure out how to make it happen."
+        />
+
+        <Timeline
+          addinationalClassname="mt-[100px]"
+          timelineHeight="h-[250px]"
+          timelineMT="mt-[-110px]"
+          titleOne="September 2008"
+          ulCn="mt-[0px]"
+          descOne={
+            <p className="text-gray text-[11px]">
+              She posted her profile and was barraged by a boatload of d-bags.
+              It seemed like match.com would turn out to be another dead end.
+            </p>
+          }
+          titleTwo="September 2008"
+          descTwo={
+            <p className="text-gray text-[11px]">
+              On his 112th attempt at making a decent Ciabatta loaf, he tossed
+              his apron aside and joined Match.com.
+            </p>
+          }
+        />
+
+        <SceneContainer
+          additionalClassnames="mt-[50px]"
+          ref={keyboardContainerRef}
+        >
+          <KeyboardScene containerRef={keyboardContainerRef} />
+        </SceneContainer>
+
+        <Timeline
+          addinationalClassname="mt-[130px]"
+          timelineHeight="h-[250px]"
+          timelineMT="mt-[-130px]"
+          titleOne="May 2008"
+          ulCn="mt-[0px]"
+          descOne={
+            <p className="text-gray text-[11px]">
+              Due to her work schedule, a long distance relationship blossomed
+              and fizzled. She was back to square one.
+            </p>
+          }
+          titleTwo="May 2008"
+          descTwo={
+            <p className="text-gray text-[11px]">
+              After a tumultuous relationship came to a close, he decided to
+              take a break from dating, and took up bread baking.
+            </p>
+          }
+          reverse
         />
       </main>
     </div>
