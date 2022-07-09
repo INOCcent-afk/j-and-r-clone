@@ -69,7 +69,7 @@ const Home: NextPage = () => {
           descTwo={
             <p className="text-gray text-[11px]">
               He kissed a real girl at the annual latin camp dance social.
-              Spoiler alert: he didn't marry her.
+              Spoiler alert: he didnt marry her.
             </p>
           }
         />
@@ -96,8 +96,8 @@ const Home: NextPage = () => {
           titleTwo="February 2007"
           descTwo={
             <p className="text-gray text-[11px]">
-              She packed her bags and her bike, waved 'farewell' to Philly and
-              'hello' to
+              She packed her bags and her bike, waved farewell to Philly and
+              hello to
               <span> Brooklyn.</span>
             </p>
           }
@@ -149,7 +149,7 @@ const Home: NextPage = () => {
           descTwo={
             <p className="text-gray text-[11px]">
               His band finished their first national tour. They survived, but{" "}
-              <span className="text-yellow">their van wasn't so lucky.</span>
+              <span className="text-yellow">their van wasnt so lucky.</span>
             </p>
           }
         />
