@@ -5,7 +5,8 @@ export const parallax = (
   elementContainer: any,
   y?: number,
   duration?: number,
-  markers?: boolean
+  markers?: boolean,
+  delay?: number
 ) => {
   return gsap.fromTo(
     elementToAnimate,
@@ -13,6 +14,7 @@ export const parallax = (
     {
       y: y,
       duration: duration,
+      delay: delay,
       scrollTrigger: {
         trigger: elementContainer,
         toggleActions: "play none none reverse",

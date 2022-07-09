@@ -10,7 +10,7 @@ export const KeyboardScene: FC<Props> = ({ containerRef }) => {
   const keyboardRef = useRef(null);
 
   useEffect(() => {
-    parallax(keyboardRef.current, containerRef.current, 93, 2, false);
+    parallax(keyboardRef.current, containerRef.current, 80, 2, false);
   }, []);
 
   return (
