@@ -19,7 +19,7 @@ export const parallax = (
         trigger: elementContainer,
         toggleActions: "play none none reverse",
         markers: markers,
-        scrub: true,
+        scrub: 1,
         start: "top center",
         end: "bottom center",
       },
