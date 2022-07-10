@@ -12,6 +12,9 @@ import { SingScene } from "../ui/SingScene";
 import { KeyboardScene } from "../ui/KeyboardScene";
 import { XOScene } from "../ui/XOScene";
 import { Chasing } from "../ui/Chasing";
+import { SnowScene } from "../ui/SnowScene";
+import { ChairScene } from "../ui/ChairScene";
+import { CatScene } from "../ui/CatScene";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,6 +24,9 @@ const Home: NextPage = () => {
   const keyboardContainerRef = useRef(null);
   const xoContainerRef = useRef(null);
   const chasingContainerRef = useRef(null);
+  const snowContainerRef = useRef(null);
+  const chairContainerRef = useRef(null);
+  const catContainerRef = useRef(null);
 
   return (
     <div>
@@ -263,7 +269,7 @@ const Home: NextPage = () => {
           }
         />
 
-        <SceneContainer additionalClassnames="mt-[18px]" ref={xoContainerRef}>
+        <SceneContainer additionalClassnames="mt-[28px]" ref={xoContainerRef}>
           <XOScene containerRef={xoContainerRef} />
         </SceneContainer>
 
@@ -315,14 +321,170 @@ const Home: NextPage = () => {
         />
 
         <SceneContainer
-          additionalClassnames="mt-[18px]"
+          additionalClassnames="mt-[28px]"
           ref={chasingContainerRef}
         >
           <Chasing containerRef={chasingContainerRef} />
         </SceneContainer>
 
         <Timeline
+          addinationalClassname="mt-[130px]"
+          timelineHeight="h-[250px]"
+          timelineMT="mt-[-130px]"
+          titleOne="May 2008"
+          ulCn="mt-[0px]"
+          descOne={
+            <p className="text-white text-[11px]">
+              Due to her work schedule, a long distance relationship blossomed
+              and fizzled. She was back to square one.
+            </p>
+          }
+          titleTwo="May 2008"
+          descTwo={
+            <p className="text-white text-[11px]">
+              After a tumultuous relationship came to a close, he decided to
+              take a break from dating, and took up bread baking.
+            </p>
+          }
+        />
+
+        <Banner
+          additionalClassnames="mt-[8px]"
+          desc="After a few messages, he invited her to see his band perform on the Lower East Side. Sparks flew, but fate was against them—he left the next morning for a month-long tour."
+        />
+
+        <Timeline
           addinationalClassname="mt-[120px]"
+          timelineHeight="h-[250px]"
+          timelineMT="mt-[-130px]"
+          titleOne="May 2008"
+          ulCn="mt-[0px]"
+          descOne={
+            <p className="text-white text-[11px]">
+              Due to her work schedule, a long distance relationship blossomed
+              and fizzled. She was back to square one.
+            </p>
+          }
+          titleTwo="May 2008"
+          descTwo={
+            <p className="text-white text-[11px]">
+              After a tumultuous relationship came to a close, he decided to
+              take a break from dating, and took up bread baking.
+            </p>
+          }
+        />
+
+        <SceneContainer additionalClassnames="mt-[28px]" ref={snowContainerRef}>
+          <SnowScene containerRef={snowContainerRef} />
+        </SceneContainer>
+
+        <Timeline
+          addinationalClassname="mt-[130px]"
+          timelineHeight="h-[250px]"
+          timelineMT="mt-[-130px]"
+          titleOne="May 2008"
+          ulCn="mt-[0px]"
+          descOne={
+            <p className="text-white text-[11px]">
+              Due to her work schedule, a long distance relationship blossomed
+              and fizzled. She was back to square one.
+            </p>
+          }
+          titleTwo="May 2008"
+          descTwo={
+            <p className="text-white text-[11px]">
+              After a tumultuous relationship came to a close, he decided to
+              take a break from dating, and took up bread baking.
+            </p>
+          }
+        />
+
+        <Banner
+          additionalClassnames="mt-[8px]"
+          desc="After a few messages, he invited her to see his band perform on the Lower East Side. Sparks flew, but fate was against them—he left the next morning for a month-long tour."
+        />
+
+        <Timeline
+          addinationalClassname="mt-[120px]"
+          timelineHeight="h-[250px]"
+          timelineMT="mt-[-130px]"
+          titleOne="May 2008"
+          ulCn="mt-[0px]"
+          descOne={
+            <p className="text-white text-[11px]">
+              Due to her work schedule, a long distance relationship blossomed
+              and fizzled. She was back to square one.
+            </p>
+          }
+          titleTwo="May 2008"
+          descTwo={
+            <p className="text-white text-[11px]">
+              After a tumultuous relationship came to a close, he decided to
+              take a break from dating, and took up bread baking.
+            </p>
+          }
+        />
+
+        <SceneContainer
+          additionalClassnames="mt-[24px]"
+          ref={chairContainerRef}
+        >
+          <ChairScene containerRef={chairContainerRef} />
+        </SceneContainer>
+
+        <Timeline
+          addinationalClassname="mt-[130px]"
+          timelineHeight="h-[250px]"
+          timelineMT="mt-[-130px]"
+          titleOne="May 2008"
+          ulCn="mt-[0px]"
+          descOne={
+            <p className="text-white text-[11px]">
+              Due to her work schedule, a long distance relationship blossomed
+              and fizzled. She was back to square one.
+            </p>
+          }
+          titleTwo="May 2008"
+          descTwo={
+            <p className="text-white text-[11px]">
+              After a tumultuous relationship came to a close, he decided to
+              take a break from dating, and took up bread baking.
+            </p>
+          }
+        />
+
+        <Banner
+          additionalClassnames="mt-[8px]"
+          desc="After a few messages, he invited her to see his band perform on the Lower East Side. Sparks flew, but fate was against them—he left the next morning for a month-long tour."
+        />
+
+        <Timeline
+          addinationalClassname="mt-[120px]"
+          timelineHeight="h-[250px]"
+          timelineMT="mt-[-130px]"
+          titleOne="May 2008"
+          ulCn="mt-[0px]"
+          descOne={
+            <p className="text-white text-[11px]">
+              Due to her work schedule, a long distance relationship blossomed
+              and fizzled. She was back to square one.
+            </p>
+          }
+          titleTwo="May 2008"
+          descTwo={
+            <p className="text-white text-[11px]">
+              After a tumultuous relationship came to a close, he decided to
+              take a break from dating, and took up bread baking.
+            </p>
+          }
+        />
+
+        <SceneContainer additionalClassnames="mt-[28px]" ref={catContainerRef}>
+          <CatScene containerRef={catContainerRef} />
+        </SceneContainer>
+
+        <Timeline
+          addinationalClassname="mt-[130px]"
           timelineHeight="h-[250px]"
           timelineMT="mt-[-130px]"
           titleOne="May 2008"
