@@ -13,8 +13,8 @@ export const MailScene: FC<Props> = () => {
       paper.current,
       { y: 0 },
       {
-        y: -100,
-        duration: 2,
+        y: -50,
+        duration: 1,
         scrollTrigger: {
           trigger: container.current,
           toggleActions: "play none none reverse",
@@ -43,7 +43,7 @@ export const MailScene: FC<Props> = () => {
         className="absolute left-2/4 bottom-[0px] translate-x-[-50%]"
         ref={paper}
       >
-        <div className="w-[180px] h-[150px] relative mx-auto">
+        <div className="w-[180px] h-[200px] relative mx-auto">
           <Image
             src="/34c.png"
             alt="stars"

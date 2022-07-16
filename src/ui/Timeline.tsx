@@ -47,10 +47,10 @@ export const Timeline: FC<Props> = ({
       className={`max-w-[300px] mx-auto relative ${addinationalClassname}`}
     >
       <div
-        className={`absolute ${timelineHeight} ${timelineMT} w-[0.1px] bg-brown top-0 left-[49.5%] translate-x-[-50%]`}
+        className={`absolute ${timelineHeight} ${timelineMT} w-[1px] bg-brown top-0 left-[49.5%] translate-x-[-50%]`}
       ></div>
       <div
-        className={`absolute ${timelineHeight} ${timelineMT} w-[0.1px] bg-brown top-0 left-[50.43%] translate-x-[-50%]`}
+        className={`absolute ${timelineHeight} ${timelineMT} w-[1px] bg-brown top-0 left-[50.43%] translate-x-[-50%]`}
       ></div>
       <ul className={`mt-[-100px] ${ulCn}`}>
         {reverse ? (
