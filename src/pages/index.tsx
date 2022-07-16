@@ -23,6 +23,7 @@ import { BushScene } from "../ui/BushScene";
 import { BuildingScene } from "../ui/BuildingScene";
 import { WeirdScene } from "../ui/weirdScene";
 import { MailScene } from "../ui/MailScene";
+import { isDesktop } from "react-device-detect";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -93,6 +94,7 @@ const Home: NextPage = () => {
               Spoiler alert: he didnt marry her.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <Banner
@@ -123,6 +125,7 @@ const Home: NextPage = () => {
             </p>
           }
           reverse
+          isDesktop={isDesktop}
         />
 
         <SceneContainer ref={girlContainerRef}>
@@ -148,6 +151,7 @@ const Home: NextPage = () => {
               <span className="text-yellow">this epic music video.</span>
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <Banner desc="he worked for Louise Fili from 9-6 and spent 7-2am at her studio in Greenpoint. It was an intense but rewarding work schedule. She was beginning to make a name for herself." />
@@ -173,6 +177,7 @@ const Home: NextPage = () => {
               <span className="text-yellow">their van wasnt so lucky.</span>
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <SceneContainer additionalClassnames="mt-[50px]" ref={singContainerRef}>
@@ -199,6 +204,7 @@ const Home: NextPage = () => {
             </p>
           }
           reverse
+          isDesktop={isDesktop}
         />
 
         <Banner
@@ -225,6 +231,7 @@ const Home: NextPage = () => {
               his apron aside and joined Match.com.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <SceneContainer
@@ -254,6 +261,7 @@ const Home: NextPage = () => {
             </p>
           }
           reverse
+          isDesktop={isDesktop}
         />
 
         <Banner
@@ -280,6 +288,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <SceneContainer additionalClassnames="mt-[28px]" ref={xoContainerRef}>
@@ -305,6 +314,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <Banner
@@ -331,6 +341,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <SceneContainer
@@ -359,6 +370,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <Banner
@@ -385,6 +397,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <SceneContainer additionalClassnames="mt-[28px]" ref={snowContainerRef}>
@@ -410,6 +423,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <Banner
@@ -436,6 +450,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <SceneContainer
@@ -464,6 +479,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <Banner
@@ -490,6 +506,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <SceneContainer additionalClassnames="mt-[28px]" ref={catContainerRef}>
@@ -515,6 +532,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <Banner
@@ -541,6 +559,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <SceneContainer additionalClassnames="mt-[28px]" ref={furContainerRef}>
@@ -566,6 +585,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <Banner
@@ -592,6 +612,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <SceneContainer
@@ -620,6 +641,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <Banner
@@ -646,6 +668,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <SceneContainer
@@ -674,6 +697,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <Banner
@@ -700,6 +724,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <SceneContainer additionalClassnames="mt-[28px]" ref={ringContainerRef}>
@@ -725,6 +750,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <Banner
@@ -751,6 +777,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <SceneContainer additionalClassnames="mt-[28px]" ref={bushContainerRef}>
@@ -776,6 +803,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <Banner
@@ -802,6 +830,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <SceneContainer
@@ -830,6 +859,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <Banner
@@ -856,6 +886,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
 
         <SceneContainer additionalClassnames="mt-[28px]">
@@ -881,6 +912,7 @@ const Home: NextPage = () => {
               take a break from dating, and took up bread baking.
             </p>
           }
+          isDesktop={isDesktop}
         />
         <MailScene />
       </main>

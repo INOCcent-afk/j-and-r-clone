@@ -45,7 +45,7 @@ export const OfficeScene: FC<Props> = ({ containerRef }) => {
       <div className="absolute left-[0px] bottom-0" ref={noiseTwo}>
         <div className="w-[340px] h-[300px] relative  mx-auto">
           <Image
-            src="/23cc.png"
+            src="/23c.png"
             alt="stars"
             layout="fill"
             objectFit="fill"
