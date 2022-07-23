@@ -19,7 +19,7 @@ export const ChairScene: FC<Props> = ({ containerRef }) => {
 
   return (
     <>
-      <div className="w-[340px] relative h-[300px] mt-[-5px] mx-auto">
+      <div className="w-[340px] xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative h-[300px] mt-[-5px] mx-auto">
         <Image
           src="/15a.jpeg"
           alt="city"
@@ -28,8 +28,8 @@ export const ChairScene: FC<Props> = ({ containerRef }) => {
           priority
         />
       </div>
-      <div className="absolute top-0" ref={twoRef}>
-        <div className="w-[320px] h-[300px] relative  mt-[-30px] mx-auto">
+      <div className="absolute top-0 xl:left-[20px]" ref={twoRef}>
+        <div className="w-[320px]  h-[300px] xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative  mt-[-30px] mx-auto">
           <Image
             src="/15b.png"
             alt="stars"
@@ -40,7 +40,7 @@ export const ChairScene: FC<Props> = ({ containerRef }) => {
         </div>
       </div>
       <div className="absolute top-0" ref={sixRef}>
-        <div className="w-[320px] h-[300px] relative  mt-[-30px] mx-auto">
+        <div className="w-[320px] h-[300px] xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative  mt-[-30px] mx-auto">
           <Image
             src="/15c.png"
             alt="stars"
@@ -51,7 +51,7 @@ export const ChairScene: FC<Props> = ({ containerRef }) => {
         </div>
       </div>
       <div className="absolute top-0" ref={chairRef}>
-        <div className="w-[320px] h-[300px] relative  mt-[-30px] mx-auto">
+        <div className="w-[320px] h-[300px] xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative mt-[-30px] mx-auto">
           <Image
             src="/15d.png"
             alt="stars"

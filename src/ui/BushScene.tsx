@@ -16,7 +16,7 @@ export const BushScene: FC<Props> = ({ containerRef }) => {
 
   return (
     <>
-      <div className="w-[340px] relative h-[300px] mt-[-5px] mx-auto">
+      <div className="w-[340px]  xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative h-[300px] mt-[-5px] mx-auto">
         <Image
           src="/29a.jpeg"
           alt="city"
@@ -26,7 +26,7 @@ export const BushScene: FC<Props> = ({ containerRef }) => {
         />
       </div>
       <div className="absolute  bottom-0">
-        <div className="w-[340px] h-[300px] relative  mx-auto">
+        <div className="w-[340px] h-[300px] xl:w-[975px] xl:h-[800px]  xs:w-[440px] xs:h-[350px] relative  mx-auto">
           <Image
             src="/29b.png"
             alt="stars"
@@ -37,7 +37,7 @@ export const BushScene: FC<Props> = ({ containerRef }) => {
         </div>
       </div>
       <div className="absolute  top-[-120px] bottom-0" ref={ring}>
-        <div className="w-[340px] h-[300px] relative  mx-auto">
+        <div className="w-[340px] h-[300px] xl:w-[975px] xl:h-[800px]  xs:w-[440px] xs:h-[350px] relative  mx-auto">
           <Image
             src="/29c.png"
             alt="stars"
@@ -48,7 +48,7 @@ export const BushScene: FC<Props> = ({ containerRef }) => {
         </div>
       </div>
       <div className="absolute bottom-0">
-        <div className="w-[340px] h-[300px] relative  mx-auto">
+        <div className="w-[340px] h-[300px] xl:w-[975px] xl:h-[800px]  xs:w-[440px] xs:h-[350px] relative  mx-auto">
           <Image
             src="/29d.png"
             alt="stars"

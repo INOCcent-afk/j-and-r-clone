@@ -50,7 +50,7 @@ export const CyclingScene: FC<Props> = ({ containerRef }) => {
 
   return (
     <>
-      <div className="w-[340px] relative h-[300px] mt-[-5px] mx-auto">
+      <div className="w-[340px]  xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative h-[300px] mt-[-5px] mx-auto">
         <Image
           src="/21a.png"
           alt="city"
@@ -60,7 +60,7 @@ export const CyclingScene: FC<Props> = ({ containerRef }) => {
         />
       </div>
       <div className="absolute top-0" ref={moonRef}>
-        <div className="w-[320px] h-[300px] relative  mt-[-30px] mx-auto">
+        <div className="w-[320px] h-[300px]  xs:w-[400px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative  mt-[-30px] mx-auto">
           <Image
             src="/21b.png"
             alt="stars"
@@ -71,7 +71,7 @@ export const CyclingScene: FC<Props> = ({ containerRef }) => {
         </div>
       </div>
       <div className="absolute top-0">
-        <div className="w-[320px] h-[300px] relative  mt-[-30px] mx-auto">
+        <div className="w-[320px] h-[300px]  xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative  mt-[-30px] mx-auto">
           <Image
             src="/21c.png"
             alt="stars"
@@ -82,7 +82,7 @@ export const CyclingScene: FC<Props> = ({ containerRef }) => {
         </div>
       </div>
       <div className="absolute top-0" ref={carRef}>
-        <div className="w-[320px] h-[300px] relative  mt-[-30px] mx-auto">
+        <div className="w-[320px] h-[300px]  xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative  mt-[-30px] mx-auto">
           <Image
             src="/21d.png"
             alt="stars"
@@ -93,7 +93,7 @@ export const CyclingScene: FC<Props> = ({ containerRef }) => {
         </div>
       </div>
       <div className="absolute top-0" ref={bikeRef}>
-        <div className="w-[320px] h-[300px] relative  mt-[-30px] mx-auto">
+        <div className="w-[320px] h-[300px]  xs:w-[400px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative  mt-[-30px] mx-auto">
           <Image
             src="/21e.png"
             alt="stars"
@@ -103,8 +103,8 @@ export const CyclingScene: FC<Props> = ({ containerRef }) => {
           />
         </div>
       </div>
-      <div className="absolute bottom-0 right-0">
-        <div className="w-[320px] h-[300px] relative  mt-[-30px] mx-auto">
+      <div className="absolute bottom-0 right-0 ">
+        <div className="w-[320px] h-[300px] xl:w-[600px] xl:h-[800px] relative  mt-[-30px] mx-auto">
           <Image
             src="/21f.png"
             alt="stars"

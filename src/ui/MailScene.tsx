@@ -27,9 +27,9 @@ export const MailScene: FC<Props> = () => {
   }, []);
 
   return (
-    <div className="relative w-full mt-[200px]" ref={container}>
-      <div className="absolute left-2/4 bottom-[50px] translate-x-[-50%]">
-        <div className="w-[350px] h-[300px] relative mx-auto">
+    <div className="relative w-full mt-[200px] xl:mt-[350px]" ref={container}>
+      <div className="absolute left-2/4 bottom-[50px] xs:bottom-0 translate-x-[-50%]">
+        <div className="w-[350px] h-[300px] xs:w-[400px] xs:h-[400px] xl:mr-[2px] xl:w-[900px] xl:h-[900px]  relative mx-auto">
           <Image
             src="/34b.png"
             alt="stars"
@@ -43,7 +43,7 @@ export const MailScene: FC<Props> = () => {
         className="absolute left-2/4 bottom-[0px] translate-x-[-50%]"
         ref={paper}
       >
-        <div className="w-[180px] h-[200px] relative mx-auto">
+        <div className="w-[180px] h-[200px] xl:w-[350px]  xl:h-[400px]  relative mx-auto">
           <Image
             src="/34c.png"
             alt="stars"
@@ -52,13 +52,13 @@ export const MailScene: FC<Props> = () => {
             priority
           />
           <div className="absolute top-[30%]">
-            <p className="text-black text-[11px] px-10 text-center">
+            <p className="text-black text-[11px] xl:text-[30px] px-10 text-center">
               Guests, please enter your password to RSVP.
             </p>
           </div>
         </div>
       </div>
-      <div className="w-[350px] relative h-[150px] mt-[-5px] mx-auto">
+      <div className="w-[350px] xs:w-[390px] xs:h-[140px] xl:w-[900px] xl:h-[300px]  relative h-[150px] mt-[-5px] mx-auto">
         <Image
           src="/34d.png"
           alt="city"
@@ -68,22 +68,22 @@ export const MailScene: FC<Props> = () => {
         />
       </div>
 
-      <div className="absolute bottom-0 right-0 z-10 w-[110px] h-[100px] xs:w-[170px] xs:h-[150px] md:w-[280px] md:h-[250px] xl:w-[450px] xl:h-[397px]">
+      <div className="absolute bottom-0 right-0 xs:right-[-10px]  z-10 w-[110px] h-[100px] xs:w-[180px] xs:h-[180px] md:w-[280px] md:h-[250px] xl:w-[450px] xl:h-[397px]">
         <Image
           src="/ornament1.png"
           alt="swirl"
           layout="fill"
-          objectFit="contain"
+          objectFit="fill"
           priority
         />
       </div>
 
-      <div className="absolute bottom-0 left-0 z-10 w-[110px] h-[100px] xs:w-[170px] xs:h-[150px] md:w-[280px] md:h-[250px] xl:w-[450px] xl:h-[397px]">
+      <div className="absolute bottom-0 left-0 xs:left-[-10px]  z-10 w-[110px] h-[100px] xs:w-[180px] xs:h-[180px] md:w-[280px] md:h-[250px] xl:w-[450px] xl:h-[397px]">
         <Image
           src="/ornament2.png"
           alt="swirl"
           layout="fill"
-          objectFit="contain"
+          objectFit="fill"
           priority
         />
       </div>

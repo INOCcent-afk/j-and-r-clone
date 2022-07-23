@@ -24,6 +24,7 @@ import { BuildingScene } from "../ui/BuildingScene";
 import { WeirdScene } from "../ui/weirdScene";
 import { MailScene } from "../ui/MailScene";
 import { isDesktop } from "react-device-detect";
+import { useWindowSize } from "../hooks/useWindowSize";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,6 +43,8 @@ const Home: NextPage = () => {
   const ringContainerRef = useRef(null);
   const bushContainerRef = useRef(null);
   const buildingContainerRef = useRef(null);
+
+  const { width } = useWindowSize();
 
   return (
     <div>
@@ -74,12 +77,15 @@ const Home: NextPage = () => {
             src="/1b.png"
             alt="jess and russ"
             layout="fill"
-            objectFit="contain"
+            objectFit={width < 1024 ? "contain" : "fill"}
             priority
           />
         </section>
 
         <Timeline
+          addinationalClassname="xs:mt-[-25px]"
+          timelineHeight="h-[150px] xs:h-[150px] xl:h-[185px] xl:mt-[25px]"
+          ulCn="xl:mt-[30px]"
           titleOne="September 1996"
           descOne={
             <p className="text-white text-[11px]">
@@ -104,7 +110,7 @@ const Home: NextPage = () => {
         />
 
         <Timeline
-          addinationalClassname="mt-[100px]"
+          addinationalClassname="mt-[100px] xl:mt-[110px]"
           timelineHeight="h-[250px]"
           timelineMT="mt-[-110px]"
           titleOne="August 2005"
@@ -132,7 +138,7 @@ const Home: NextPage = () => {
 
         <Timeline
           addinationalClassname="mt-[150px]"
-          timelineHeight="h-[350px]"
+          timelineHeight="h-[230px] xs:h-[250px] xl:h-[214px]"
           timelineMT="mt-[-150px]"
           titleOne="March 2007"
           ulCn="mt-[0px]"
@@ -154,7 +160,7 @@ const Home: NextPage = () => {
         <Banner desc="he worked for Louise Fili from 9-6 and spent 7-2am at her studio in Greenpoint. It was an intense but rewarding work schedule. She was beginning to make a name for herself." />
 
         <Timeline
-          addinationalClassname="mt-[100px]"
+          addinationalClassname="mt-[100px] xl:mt-[115px]"
           timelineHeight="h-[285px]"
           timelineMT="mt-[-115px]"
           titleOne="January 2008"
@@ -181,8 +187,8 @@ const Home: NextPage = () => {
         </SceneContainer>
 
         <Timeline
-          addinationalClassname="mt-[110px]"
-          timelineHeight="h-[250px]"
+          addinationalClassname="mt-[110px] "
+          timelineHeight="h-[250px] xl:h-[214px]"
           timelineMT="mt-[-110px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
@@ -210,7 +216,7 @@ const Home: NextPage = () => {
         <Timeline
           addinationalClassname="mt-[100px]"
           timelineHeight="h-[300px]"
-          timelineMT="mt-[-110px]"
+          timelineMT="mt-[-110px] xl:mt-[-100px]"
           titleOne="September 2008"
           ulCn="mt-[0px]"
           descOne={
@@ -237,7 +243,7 @@ const Home: NextPage = () => {
 
         <Timeline
           addinationalClassname="mt-[110px]"
-          timelineHeight="h-[250px]"
+          timelineHeight="h-[250px] xl:h-[214px]"
           timelineMT="mt-[-110px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
@@ -265,7 +271,7 @@ const Home: NextPage = () => {
         <Timeline
           addinationalClassname="mt-[120px]"
           timelineHeight="h-[320px]"
-          timelineMT="mt-[-130px]"
+          timelineMT="mt-[-130px] xl:mt-[-120px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
           descOne={
@@ -289,8 +295,8 @@ const Home: NextPage = () => {
 
         <Timeline
           addinationalClassname="mt-[120px]"
-          timelineHeight="h-[250px]"
-          timelineMT="mt-[-130px]"
+          timelineHeight="h-[250px] xl:h-[224px]"
+          timelineMT="mt-[-130px] xl:mt-[-120px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
           descOne={
@@ -314,7 +320,7 @@ const Home: NextPage = () => {
         />
 
         <Timeline
-          addinationalClassname="mt-[120px]"
+          addinationalClassname="mt-[120px] xl:mt-[130px]"
           timelineHeight="h-[320px]"
           timelineMT="mt-[-130px]"
           titleOne="May 2008"
@@ -343,7 +349,7 @@ const Home: NextPage = () => {
 
         <Timeline
           addinationalClassname="mt-[130px]"
-          timelineHeight="h-[250px]"
+          timelineHeight="h-[250px] xl:h-[234px]"
           timelineMT="mt-[-130px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
@@ -370,7 +376,7 @@ const Home: NextPage = () => {
         <Timeline
           addinationalClassname="mt-[120px]"
           timelineHeight="h-[330px]"
-          timelineMT="mt-[-130px]"
+          timelineMT="mt-[-130px] xl:mt-[-120px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
           descOne={
@@ -394,7 +400,7 @@ const Home: NextPage = () => {
 
         <Timeline
           addinationalClassname="mt-[130px]"
-          timelineHeight="h-[250px]"
+          timelineHeight="h-[250px] xl:h-[234px]"
           timelineMT="mt-[-130px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
@@ -421,7 +427,7 @@ const Home: NextPage = () => {
         <Timeline
           addinationalClassname="mt-[120px]"
           timelineHeight="h-[330px]"
-          timelineMT="mt-[-130px]"
+          timelineMT="mt-[-130px] xl:mt-[-120px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
           descOne={
@@ -448,7 +454,7 @@ const Home: NextPage = () => {
 
         <Timeline
           addinationalClassname="mt-[130px]"
-          timelineHeight="h-[250px]"
+          timelineHeight="h-[250px] xl:h-[234px]"
           timelineMT="mt-[-130px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
@@ -475,7 +481,7 @@ const Home: NextPage = () => {
         <Timeline
           addinationalClassname="mt-[120px]"
           timelineHeight="h-[330px]"
-          timelineMT="mt-[-130px]"
+          timelineMT="mt-[-130px] xl:mt-[-120px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
           descOne={
@@ -499,7 +505,7 @@ const Home: NextPage = () => {
 
         <Timeline
           addinationalClassname="mt-[130px]"
-          timelineHeight="h-[250px]"
+          timelineHeight="h-[250px] xl:h-[234px]"
           timelineMT="mt-[-130px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
@@ -526,7 +532,7 @@ const Home: NextPage = () => {
         <Timeline
           addinationalClassname="mt-[120px]"
           timelineHeight="h-[330px]"
-          timelineMT="mt-[-130px]"
+          timelineMT="mt-[-130px] mt-[-120px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
           descOne={
@@ -550,7 +556,7 @@ const Home: NextPage = () => {
 
         <Timeline
           addinationalClassname="mt-[130px]"
-          timelineHeight="h-[250px]"
+          timelineHeight="h-[250px] xl:h-[234px]"
           timelineMT="mt-[-130px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
@@ -577,7 +583,7 @@ const Home: NextPage = () => {
         <Timeline
           addinationalClassname="mt-[120px]"
           timelineHeight="h-[330px]"
-          timelineMT="mt-[-130px]"
+          timelineMT="mt-[-130px] xl:mt-[-120px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
           descOne={
@@ -604,7 +610,7 @@ const Home: NextPage = () => {
 
         <Timeline
           addinationalClassname="mt-[130px]"
-          timelineHeight="h-[250px]"
+          timelineHeight="h-[250px] xl:h-[234px]"
           timelineMT="mt-[-130px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
@@ -631,7 +637,7 @@ const Home: NextPage = () => {
         <Timeline
           addinationalClassname="mt-[120px]"
           timelineHeight="h-[330px]"
-          timelineMT="mt-[-130px]"
+          timelineMT="mt-[-130px] xl:mt-[-120px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
           descOne={
@@ -658,7 +664,7 @@ const Home: NextPage = () => {
 
         <Timeline
           addinationalClassname="mt-[130px]"
-          timelineHeight="h-[250px]"
+          timelineHeight="h-[250px] xl:h-[234px]"
           timelineMT="mt-[-130px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
@@ -685,7 +691,7 @@ const Home: NextPage = () => {
         <Timeline
           addinationalClassname="mt-[120px]"
           timelineHeight="h-[330px]"
-          timelineMT="mt-[-130px]"
+          timelineMT="mt-[-130px] xl:mt-[-120px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
           descOne={
@@ -709,7 +715,7 @@ const Home: NextPage = () => {
 
         <Timeline
           addinationalClassname="mt-[130px]"
-          timelineHeight="h-[250px]"
+          timelineHeight="h-[250px] xl:h-[234px]"
           timelineMT="mt-[-130px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
@@ -736,7 +742,7 @@ const Home: NextPage = () => {
         <Timeline
           addinationalClassname="mt-[120px]"
           timelineHeight="h-[330px]"
-          timelineMT="mt-[-130px]"
+          timelineMT="mt-[-130px] xl:mt-[-120px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
           descOne={
@@ -760,7 +766,7 @@ const Home: NextPage = () => {
 
         <Timeline
           addinationalClassname="mt-[130px]"
-          timelineHeight="h-[250px]"
+          timelineHeight="h-[250px] xl:h-[234px]"
           timelineMT="mt-[-130px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
@@ -787,7 +793,7 @@ const Home: NextPage = () => {
         <Timeline
           addinationalClassname="mt-[120px]"
           timelineHeight="h-[330px]"
-          timelineMT="mt-[-130px]"
+          timelineMT="mt-[-130px] xl:mt-[-120px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
           descOne={
@@ -814,7 +820,7 @@ const Home: NextPage = () => {
 
         <Timeline
           addinationalClassname="mt-[130px]"
-          timelineHeight="h-[250px]"
+          timelineHeight="h-[250px] xl:h-[234px]"
           timelineMT="mt-[-130px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
@@ -841,7 +847,7 @@ const Home: NextPage = () => {
         <Timeline
           addinationalClassname="mt-[120px]"
           timelineHeight="h-[330px]"
-          timelineMT="mt-[-130px]"
+          timelineMT="mt-[-130px] xl:mt-[-120px]"
           titleOne="May 2008"
           ulCn="mt-[0px]"
           descOne={

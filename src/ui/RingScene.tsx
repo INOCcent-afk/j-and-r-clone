@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import Image from "next/image";
 import React, { FC, useEffect, useRef } from "react";
+import { useWindowSize } from "../hooks/useWindowSize";
 
 interface Props {
   containerRef: any;
@@ -9,6 +10,7 @@ interface Props {
 export const RingScene: FC<Props> = ({ containerRef }) => {
   const ring1 = useRef(null);
   const ring2 = useRef(null);
+  const { width } = useWindowSize();
 
   useEffect(() => {
     gsap.fromTo(
@@ -48,8 +50,8 @@ export const RingScene: FC<Props> = ({ containerRef }) => {
       ring2.current,
       { y: 0, x: 0 },
       {
-        y: 110,
-        x: 45,
+        y: width < 500 ? 110 : 100,
+        x: width < 500 ? 45 : 38,
         duration: 2,
         scrollTrigger: {
           trigger: containerRef.current,
@@ -60,11 +62,11 @@ export const RingScene: FC<Props> = ({ containerRef }) => {
         },
       }
     );
-  }, []);
+  }, [width]);
 
   return (
     <div className="bg-black">
-      <div className="w-[340px] relative h-[300px] mt-[-5px] mx-auto">
+      <div className="w-[340px] xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[800px] relative h-[300px] mt-[-5px] mx-auto">
         <Image
           src="/25b.png"
           alt="city"
@@ -73,12 +75,18 @@ export const RingScene: FC<Props> = ({ containerRef }) => {
           priority
         />
       </div>
-      <div className="absolute left-[-100px] top-[-180px]" ref={ring1}>
+      <div
+        className="absolute left-[-100px] top-[-180px] xs:left-[-80px]"
+        ref={ring1}
+      >
         <div className="relative mx-auto z-50">
           <img src="/25a.png" alt="" />
         </div>
       </div>
-      <div className="absolute left-[-100px] top-[-180px]" ref={ring2}>
+      <div
+        className="absolute left-[-100px] top-[-180px] xs:left-[-80px]"
+        ref={ring2}
+      >
         <div className="relative  mx-auto">
           <img src="/25c.png" alt="" />
         </div>

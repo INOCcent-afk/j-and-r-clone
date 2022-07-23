@@ -19,7 +19,7 @@ export const GirlScene: FC<Props> = ({ containerRef }) => {
 
   return (
     <>
-      <div className="w-[340px] relative h-[300px] mt-[-5px] mx-auto">
+      <div className="w-[340px] xs:w-[440px] xl:w-[975px] xl:h-[1000px] relative h-[300px] mt-[-5px] mx-auto">
         <Image
           src="/3a.jpeg"
           alt="city"
@@ -30,7 +30,7 @@ export const GirlScene: FC<Props> = ({ containerRef }) => {
       </div>
       <div className="absolute top-0">
         <div
-          className="w-[320px] h-[300px] relative  mt-[-30px] mx-auto"
+          className="w-[320px] xs:w-[440px] h-[300px] xl:w-[975px] xl:h-[1000px] relative  mt-[-30px] mx-auto"
           ref={starsRef}
         >
           <Image
@@ -44,7 +44,7 @@ export const GirlScene: FC<Props> = ({ containerRef }) => {
       </div>
       <div className="absolute top-0">
         <div
-          className="w-[320px] h-[300px] relative mt-[100px] mx-auto "
+          className="w-[320px] h-[300px] xl:w-[975px] xl:h-[1000px] relative mt-[100px] mx-auto "
           ref={moonRef}
         >
           <Image
@@ -58,7 +58,7 @@ export const GirlScene: FC<Props> = ({ containerRef }) => {
       </div>
       <div className="absolute top-0">
         <div
-          className="w-[320px] h-[300px] relative mt-[-100px] mx-auto "
+          className="w-[320px] xs:w-[440px] h-[300px] xl:w-[975px] xl:h-[1000px] xs:h-[400px] relative mt-[-100px] mx-auto "
           ref={angelRef}
         >
           <Image

@@ -10,7 +10,7 @@ export const SceneContainer = forwardRef<HTMLDivElement, Props>(
   ({ children, additionalClassnames }, ref) => {
     return (
       <section className={`relative mt-24 ${additionalClassnames}`} ref={ref}>
-        <div className="relative w-[350px] h-[5px] mb-[0px] mt-[-10px]">
+        <div className="relative w-[350px] xs:w-[450px] h-[5px] mb-[0px] mt-[-10px] xl:w-[1000px] xl:h-[10px]">
           <Image
             src="/frame-top.png"
             alt="frame-top"
@@ -19,10 +19,10 @@ export const SceneContainer = forwardRef<HTMLDivElement, Props>(
             priority
           />
         </div>
-        <div className="relative w-[346px] mx-auto overflow-hidden border-x-[0.1px] border-x-yellow">
+        <div className="relative w-[346px] xs:w-[446px] mx-auto overflow-hidden border-x-[0.1px] xl:w-[988px] xl:h-[800px] border-x-yellow">
           {children}
         </div>
-        <div className="relative w-[350px] h-[5px] mt-[0px]">
+        <div className="relative w-[350px] xs:w-[450px] h-[5px] mt-[0px] xl:w-[1000px] xl:h-[10px]">
           <Image
             src="/frame-bottom.png"
             alt="frame-bottom"

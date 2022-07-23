@@ -17,7 +17,7 @@ export const FurScene: FC<Props> = ({ containerRef }) => {
 
   return (
     <>
-      <div className="w-[350px] relative h-[350px] mt-[-5px] mx-auto">
+      <div className="w-[350px] h-[350px] xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative  mt-[-5px] mx-auto">
         <Image
           src="/19a.jpeg"
           alt="city"
@@ -27,7 +27,7 @@ export const FurScene: FC<Props> = ({ containerRef }) => {
         />
       </div>
       <div className="absolute top-[-100px]" ref={peopleRef}>
-        <div className="w-[350px] h-[300px] relative  mt-[-30px] mx-auto">
+        <div className="w-[350px] h-[300px] xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative  mt-[-30px] mx-auto">
           <Image
             src="/19b.png"
             alt="stars"
@@ -38,7 +38,7 @@ export const FurScene: FC<Props> = ({ containerRef }) => {
         </div>
       </div>
       <div className="absolute top-[150px]" ref={lettersRef}>
-        <div className="w-[350px] h-[300px] relative  mt-[-30px] mx-auto">
+        <div className="w-[350px] h-[300px] xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative  mt-[-30px] mx-auto">
           <Image
             src="/19c.png"
             alt="stars"

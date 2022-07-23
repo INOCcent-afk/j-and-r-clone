@@ -22,7 +22,7 @@ export const OfficeScene: FC<Props> = ({ containerRef }) => {
 
   return (
     <>
-      <div className="w-[340px] relative h-[300px] mt-[-5px] mx-auto">
+      <div className="w-[340px]  xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[800px] relative h-[300px] mt-[-5px] mx-auto">
         <Image
           src="/23a.jpeg"
           alt="city"
@@ -32,7 +32,7 @@ export const OfficeScene: FC<Props> = ({ containerRef }) => {
         />
       </div>
       <div className="absolute left-[0px] bottom-0" ref={noiseOne}>
-        <div className="w-[340px] h-[300px] relative  mx-auto">
+        <div className="w-[340px]  xs:w-[440px] xs:h-[350px] h-[300px] xl:w-[975px] xl:h-[800px] relative  mx-auto">
           <Image
             src="/23b.png"
             alt="stars"
@@ -43,7 +43,7 @@ export const OfficeScene: FC<Props> = ({ containerRef }) => {
         </div>
       </div>
       <div className="absolute left-[0px] bottom-0" ref={noiseTwo}>
-        <div className="w-[340px] h-[300px] relative  mx-auto">
+        <div className="w-[340px]  xs:w-[440px] xs:h-[350px] h-[300px] xl:w-[975px] xl:h-[800px] relative  mx-auto">
           <Image
             src="/23c.png"
             alt="stars"
@@ -54,7 +54,7 @@ export const OfficeScene: FC<Props> = ({ containerRef }) => {
         </div>
       </div>
       <div className="absolute left-[0px] bottom-0" ref={fog}>
-        <div className="w-[360px] h-[300px] relative  mx-auto">
+        <div className="w-[360px] h-[300px]  xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[800px] relative  mx-auto">
           <Image
             src="/23d.png"
             alt="stars"
@@ -65,7 +65,7 @@ export const OfficeScene: FC<Props> = ({ containerRef }) => {
         </div>
       </div>
       <div className="absolute left-[0px] bottom-0" ref={jessica}>
-        <div className="w-[360px] h-[300px] relative  mx-auto">
+        <div className="w-[360px] h-[300px]  xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[800px] relative  mx-auto">
           <Image
             src="/23e.png"
             alt="stars"

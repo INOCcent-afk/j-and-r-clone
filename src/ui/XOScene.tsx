@@ -12,14 +12,14 @@ export const XOScene: FC<Props> = ({ containerRef }) => {
   const xo3Ref = useRef(null);
 
   useEffect(() => {
-    parallax(xo1Ref.current, containerRef.current, 340, 1, false);
-    parallax(xo2Ref.current, containerRef.current, 340, 2, false);
-    parallax(xo3Ref.current, containerRef.current, 340, 3, false);
+    parallax(xo1Ref.current, containerRef.current, 640, 1, false);
+    parallax(xo2Ref.current, containerRef.current, 640, 2, false);
+    parallax(xo3Ref.current, containerRef.current, 640, 3, false);
   }, []);
 
   return (
     <>
-      <div className="w-[340px] relative h-[300px]  mx-auto">
+      <div className="w-[340px] xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative h-[300px] mx-auto">
         <Image
           src="/9a.jpeg"
           alt="girl"
@@ -28,8 +28,11 @@ export const XOScene: FC<Props> = ({ containerRef }) => {
           priority
         />
       </div>
-      <div className="absolute top-[0px] left-[1.9px]" ref={xo1Ref}>
-        <div className="w-[340px] relative h-[300px] mx-auto">
+      <div
+        className="absolute top-[0px] left-[1.9px] xl:top-[-300px]"
+        ref={xo1Ref}
+      >
+        <div className="w-[340px] xs:w-[440px] xs:h-[300px]  xl:w-[975px] xl:h-[1000px] relative h-[300px] mx-auto">
           <Image
             src="/9b.png"
             alt="sing"
@@ -39,8 +42,11 @@ export const XOScene: FC<Props> = ({ containerRef }) => {
           />
         </div>
       </div>
-      <div className="absolute top-[-300px] left-[1.9px]" ref={xo2Ref}>
-        <div className="w-[340px] relative h-[300px] mx-auto">
+      <div
+        className="absolute top-[-300px] left-[1.9px] xl:top-[-700px]"
+        ref={xo2Ref}
+      >
+        <div className="w-[340px] xs:w-[440px] xs:h-[300px]  xl:w-[975px] xl:h-[1000px] relative h-[300px] mx-auto">
           <Image
             src="/9b.png"
             alt="sing"
@@ -51,8 +57,11 @@ export const XOScene: FC<Props> = ({ containerRef }) => {
         </div>
       </div>
 
-      <div className="absolute top-[-700px] left-[1.9px]" ref={xo3Ref}>
-        <div className="w-[340px] relative h-[300px] mx-auto">
+      <div
+        className="absolute top-[-700px] left-[1.9px] xl:top-[-1400px]"
+        ref={xo3Ref}
+      >
+        <div className="w-[340px] xs:w-[440px] xs:h-[300px]  xl:w-[975px] xl:h-[1000px] relative h-[300px] mx-auto">
           <Image
             src="/9b.png"
             alt="sing"

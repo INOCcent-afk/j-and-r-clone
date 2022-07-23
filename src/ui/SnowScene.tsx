@@ -15,7 +15,7 @@ export const SnowScene: FC<Props> = ({ containerRef }) => {
 
   return (
     <>
-      <div className="w-[340px] relative h-[300px] mt-[-30px] mx-auto">
+      <div className="w-[340px] xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative h-[300px] mt-[-30px] mx-auto">
         <Image
           src="/13a.jpeg"
           alt="city"
@@ -25,7 +25,7 @@ export const SnowScene: FC<Props> = ({ containerRef }) => {
         />
       </div>
       <div className="absolute top-[-200px]" ref={snowRef}>
-        <div className="w-[300px] h-[340px] relative  mt-[-30px] mx-auto">
+        <div className="w-[300px] h-[340px] xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative mt-[-30px] mx-auto">
           <Image
             src="/13b.png"
             alt="stars"
