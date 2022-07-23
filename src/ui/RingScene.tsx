@@ -50,8 +50,8 @@ export const RingScene: FC<Props> = ({ containerRef }) => {
       ring2.current,
       { y: 0, x: 0 },
       {
-        y: width < 500 ? 110 : 100,
-        x: width < 500 ? 45 : 38,
+        y: width < 500 ? 110 : width < 500 && width > 1280 ? 100 : 180,
+        x: width < 500 ? 45 : width < 500 && width > 1280 ? 38 : 90,
         duration: 2,
         scrollTrigger: {
           trigger: containerRef.current,
@@ -76,7 +76,7 @@ export const RingScene: FC<Props> = ({ containerRef }) => {
         />
       </div>
       <div
-        className="absolute left-[-100px] top-[-180px] xs:left-[-80px]"
+        className="absolute left-[-100px] top-[-180px] xs:left-[-80px] xl:left-[-100px] xl:top-[-280px]"
         ref={ring1}
       >
         <div className="relative mx-auto z-50">
@@ -84,7 +84,7 @@ export const RingScene: FC<Props> = ({ containerRef }) => {
         </div>
       </div>
       <div
-        className="absolute left-[-100px] top-[-180px] xs:left-[-80px]"
+        className="absolute left-[-100px] top-[-180px] xs:left-[-80px] xl:left-[-100px] xl:top-[-280px]"
         ref={ring2}
       >
         <div className="relative  mx-auto">
