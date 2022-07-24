@@ -29,7 +29,7 @@ export const Chasing: FC<Props> = ({ containerRef }) => {
 
   return (
     <>
-      <div className="w-[340px] xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] relative h-[300px] mt-[-5px] mx-auto">
+      <div className="w-[340px] xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[800px] relative h-[300px] mt-[-5px] mx-auto">
         <Image
           src="/11a.jpeg"
           alt="city"
@@ -39,11 +39,11 @@ export const Chasing: FC<Props> = ({ containerRef }) => {
         />
       </div>
       <div
-        className="absolute left-[-80px] bottom-0 xl:bottom-[-120px]"
+        className="absolute left-[-80px] bottom-0 xl:bottom-[0px]"
         ref={chasingRef}
       >
         <div
-          className="w-[320px] xs:w-[440px] xs:h-[350px] h-[300px] xl:w-[975px] xl:h-[1000px] relative z-0 mx-auto"
+          className="w-[320px] xs:w-[440px] xs:h-[350px] h-[300px] xl:w-[975px] xl:h-[800px] relative z-0 mx-auto"
           ref={chasingRef}
         >
           <Image

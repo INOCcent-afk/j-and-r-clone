@@ -6,7 +6,7 @@ interface Props {}
 export const WeirdScene: FC<Props> = () => {
   return (
     <>
-      <div className="w-[340px] relative h-[300px] xs:w-[440px] xs:h-[350px] xl:w-[975px] xl:h-[1000px] mt-[-5px] mx-auto">
+      <div className="w-[340px] relative h-[300px] xs:w-[440px] xs:h-[350px] xl:w-[1000px] xl:h-[800px] mt-[-5px] mx-auto">
         <Image
           src="/33a.jpeg"
           alt="city"

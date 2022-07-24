@@ -46,22 +46,62 @@ export const RingScene: FC<Props> = ({ containerRef }) => {
       }
     );
 
-    gsap.fromTo(
-      ring2.current,
-      { y: 0, x: 0 },
-      {
-        y: width < 500 ? 110 : width < 500 && width > 1280 ? 100 : 180,
-        x: width < 500 ? 45 : width < 500 && width > 1280 ? 38 : 90,
-        duration: 2,
-        scrollTrigger: {
-          trigger: containerRef.current,
-          toggleActions: "play none none reverse",
-          scrub: true,
-          start: "start center",
-          end: "bottom center",
-        },
-      }
-    );
+    if (width < 500) {
+      gsap.fromTo(
+        ring2.current,
+        { y: 0, x: 0 },
+        {
+          y: 110,
+          x: 45,
+          duration: 2,
+          scrollTrigger: {
+            trigger: containerRef.current,
+            toggleActions: "play none none reverse",
+            scrub: true,
+            start: "start center",
+            end: "bottom center",
+          },
+        }
+      );
+    }
+
+    if (width >= 500 && width < 1280) {
+      gsap.fromTo(
+        ring2.current,
+        { y: 0, x: 0 },
+        {
+          y: 100,
+          x: 38,
+          duration: 2,
+          scrollTrigger: {
+            trigger: containerRef.current,
+            toggleActions: "play none none reverse",
+            scrub: true,
+            start: "start center",
+            end: "bottom center",
+          },
+        }
+      );
+    }
+
+    if (width >= 1280) {
+      gsap.fromTo(
+        ring2.current,
+        { y: 0, x: 0 },
+        {
+          y: 180,
+          x: 80,
+          duration: 2,
+          scrollTrigger: {
+            trigger: containerRef.current,
+            toggleActions: "play none none reverse",
+            scrub: true,
+            start: "start center",
+            end: "bottom center",
+          },
+        }
+      );
+    }
   }, [width]);
 
   return (
@@ -76,7 +116,7 @@ export const RingScene: FC<Props> = ({ containerRef }) => {
         />
       </div>
       <div
-        className="absolute left-[-100px] top-[-180px] xs:left-[-80px] xl:left-[-100px] xl:top-[-280px]"
+        className="absolute left-[-100px] top-[-180px] xs:left-[-80px] xl:left-[-90px] xl:top-[-280px]"
         ref={ring1}
       >
         <div className="relative mx-auto z-50">
@@ -84,7 +124,7 @@ export const RingScene: FC<Props> = ({ containerRef }) => {
         </div>
       </div>
       <div
-        className="absolute left-[-100px] top-[-180px] xs:left-[-80px] xl:left-[-100px] xl:top-[-280px]"
+        className="absolute left-[-100px] top-[-180px] xs:left-[-80px] xl:left-[-90px] xl:top-[-280px]"
         ref={ring2}
       >
         <div className="relative  mx-auto">
